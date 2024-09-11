@@ -1,0 +1,3 @@
+:: why would u want to learn RUST if it's just easier to write code in python or js?
+-> one of the reasons is if you have to write languages where u need very low level access to ur system, extremely low latency, want to write smart contracts on the solana blockchain u sort of have to use RUST.
+-> so there are cases where u can't really skip it, but in most cases simple languages like js or ts works, especially on full stack applications or backends of them.
