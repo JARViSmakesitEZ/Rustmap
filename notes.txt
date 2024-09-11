@@ -1,3 +1,10 @@
 :: why would u want to learn RUST if it's just easier to write code in python or js?
 -> one of the reasons is if you have to write languages where u need very low level access to ur system, extremely low latency, want to write smart contracts on the solana blockchain u sort of have to use RUST.
 -> so there are cases where u can't really skip it, but in most cases simple languages like js or ts works, especially on full stack applications or backends of them.
+:: it's a system's language, u have access to a lot of resources on the machine that I am running RUST on or C on, VS if I am running JS I will not have access to these resources on the machine
+:: what are these resources? some of these include RAM, which is pretty much the place where my program is running and holding all of it's variables,if I write a RUST process, I get access to this memory in a wierd way like not exactly, in C I really get access to the memory, RUST mein I "can" get access to the memory
+:: since it's a low level language, it runs very close to my machine, and if I ever want to build things such as compilers, something that is closer to my OS, something that wants to access my file system and memory for whatever reason, I cannot do all these in js, but can do all these in RUST
+:: it is incredibly faster than JS, so even if I can build a use case in js, like let's say a WebRTC server, i would probably not write it in js but write it in faster languages like Rust,c, golang, example: mediasoup(in c/rust), pion(in golang)
+:: in fact, mediasoup goes one step ahead, and provides a high level js API, u can do npm install mediasoup, and do something like import {mediasoup} from "mediasoup", then do mediasoup.createWebrtcconn()
+:: here the js is just the high level API to talk to a C worker or a RUST worker
+:: so a lot of times, projects will expose a high level API in javascript, just because it's a popularly used/known language, but under the hood, the js API just calls the c/rust process because these are much faster for use cases like these, webRTC being a prime example for it
